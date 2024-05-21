@@ -1,5 +1,7 @@
-import Image from 'next/image'
-
-export default function Home() {
-  return <h1>Imagiflix</h1>
+export default function Main() {
+  return (
+    <main>
+      <h1>Imagineflix</h1>
+    </main>
+  )
 }

@@ -9,9 +9,9 @@ export default function Player() {
 
   return (
     <div className="relative">
-      <div className="absolute z-10 h-28 w-full p-4">
+      <div className="absolute z-10 h-20 w-full bg-black p-4">
         <Link href="/main">
-          <ArrowLeft size={48} className="text-transparent" />
+          <ArrowLeft size={48} color="white" />
         </Link>
       </div>
       <video

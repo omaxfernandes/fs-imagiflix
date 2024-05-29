@@ -22,7 +22,9 @@ export function Hover({ onClose, isOpen }: HoverProps) {
           <div className="flex flex-col gap-12 p-8">
             <div className="flex justify-between">
               <div className="flex gap-4">
-                <FaCirclePlay size={48} />
+                <Link href="/player">
+                  <FaCirclePlay size={48} />
+                </Link>
                 <PlusCircle size={48} />
                 <ThumbsUp size={48} />
               </div>

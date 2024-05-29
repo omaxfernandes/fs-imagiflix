@@ -3,6 +3,7 @@ import { PlusCircle, ThumbsUp } from 'lucide-react'
 import { FaCaretDown, FaCirclePlay } from 'react-icons/fa6'
 import Image from 'next/image'
 import Movie5 from '@/assets/movies/capa5.png'
+import Link from 'next/link'
 
 interface HoverProps {
   onClose: () => void
@@ -26,7 +27,9 @@ export function Hover({ onClose, isOpen }: HoverProps) {
                 <ThumbsUp size={48} />
               </div>
               <div>
-                <FaCaretDown size={48} />
+                <Link href="/details">
+                  <FaCaretDown size={48} />
+                </Link>
               </div>
             </div>
             <div className="flex items-center gap-4">

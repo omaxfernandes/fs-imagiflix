@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Movie from '@/assets/movies/capa6.png'
 import { CircleX, PlusCircle, ThumbsUp, Volume2 } from 'lucide-react'
 import { Button } from '@/components/button/Button'
+import { Close } from './Close'
 import { FaPlay } from 'react-icons/fa6'
 
 export default function Details() {
@@ -19,9 +20,7 @@ export default function Details() {
               className="-z-10"
             />
             <div className="flex h-80 flex-col justify-between px-4 pt-4 text-zinc-50">
-              <div className="flex items-center justify-end">
-                <CircleX size={48} />
-              </div>
+              <Close />
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <Button icon={<FaPlay size={32} />} text="Assistir" color="primary" />
